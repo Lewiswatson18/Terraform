@@ -20,7 +20,9 @@ Next, you need to open your advanced system settings and edit the path within th
 
 Once you have opened environmental variables you need to point the path to the terraform binary you just downloaded.
 <br>
-To verify that terraform is installed open up PowerShell and run the following command terraform -help
+To verify that terraform is installed open up PowerShell and run the following command  terraform -help
+
+
 <br>
 
 ### Linux - CentOS/RHEL
@@ -42,6 +44,23 @@ Install Terraform from the new repository.
 
  >sudo yum -y install terraform
  <br>
+
+ ### Linux - Amazon Linux
+ <br>
+ Install yum-config-manager to manage your repositories.
+ <br>
+
+ > sudo yum install -y yum-utils
+<br>
+Use yum-config-manager to add the official HashiCorp Linux repository.
+<br>
+
+> sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+<br>
+Install Terraform from the new repository.
+<br>
+
+ > sudo yum -y install terraform
 
 
 <hr>
